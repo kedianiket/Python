@@ -1,0 +1,9 @@
+wb1 = xw.Book(r"c:\Users\mrobben_cwf\AppData\Roaming\Microsoft\Excel\XLSTART\PERSONAL.XLSB")
+#wb = xw.Book('Test.xlsx')
+
+app = wb1.app
+
+# into brackets, the path of the macro
+
+macro_vba = app.macro("PERSONAL.XLSB!Macro") 
+macro_vba()
